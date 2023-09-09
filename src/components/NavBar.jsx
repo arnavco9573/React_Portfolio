@@ -9,9 +9,9 @@ const Navbar = () => {
   };
 
   return (
-    <div className="max-w-full">
+    <div className="max-w-full fixed top-0 w-full z-10">
       {/* Navbar container with fixed position */}
-      <div className="fixed top-0 w-full z-10">
+      <div className="">
         <nav className="bg-[#1d2534] font-primary text-white flex justify-between mx-auto p-2 md:p-4">
           <a
             className="pt-2 md:pt-5 pl-2 md:pl-5 text-xl md:text-2xl xl:ml-[6rem]"
@@ -42,7 +42,7 @@ const Navbar = () => {
             </button>
           </div>
           <ul
-            className={`hidden md:flex px-2 md:px-12 py-2 md:py-4 space-x-4 md:space-x-8 justify-end items-center text-[20px] ${
+            className={`hidden md:flex px-2 md:px-12 py-2 md:py-4  space-x-4 md:space-x-8 justify-end items-center text-[20px] ${
               mobileMenuOpen ? 'hidden' : 'block'
             }`}
           >
@@ -118,9 +118,10 @@ const Navbar = () => {
         id="mobile-menu"
         className={`md:hidden ${mobileMenuOpen ? 'block' : 'hidden'}`}
       >
-        <li className="py-2 hover:text-cyan-400 transition-all duration-500 group relative cursor-pointer">
+        <ul className="bg-[#1d2534] font-primary text-white py-2 space-y-2 px-4 z-50">
+          <li className="hover:text-cyan-400 transition-all duration-500 cursor-pointer">
             <Link
-              activeClass="active" // Class to apply when the link is active
+              activeClass="active"
               to="home"
               spy={true}
               smooth={true}
@@ -183,6 +184,7 @@ const Navbar = () => {
               Contact
             </Link>
           </li>
+        </ul>
       </div>
     </div>
   );
