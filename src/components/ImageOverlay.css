@@ -1,0 +1,11 @@
+/* ImageOverlay.css */
+.overlay {
+    /* Initial state (hidden) */
+    opacity: 0;
+  }
+  
+  .overlay:hover {
+    /* Hover state (visible) */
+    opacity: 0.75;
+  }
+  
