@@ -68,7 +68,7 @@ const Home = () => {
         <img
           src={asset1}
           alt=""
-          className="w-full md:w-[200vw] animated-image lg:w-[25vw] xl:w-[35vw]"
+          className="w-full md:w-[200vw] animated-image lg:w-[20vw] xl:w-[15vw]"
         />
       </div>
     </section>
